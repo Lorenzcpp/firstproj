@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Identifier</title>
+    <style>
+        body {
+            background-image: url('a.jpg'); /* Replace 'a.jpg' with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: gray;
+            min-height: 100vh; /* Ensure body fills viewport height */
+            display: flex;
+            flex-direction: column; /* Align items vertically */
+            margin: 0; /* Remove default body margins */
+            font-family: sans-serif; /* Add a default font */
+        }
+
+        .container {
+            margin: 20px auto; /* Center horizontally */
+            text-align: center;
+            width: 90%; /* Take up 90% of available width */
+            max-width: 600px; /* Set a maximum width for larger screens */
+            padding: 20px; /* Added padding for better spacing */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        }
+
+        p {
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            background-color: yellow;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: black; /* Improve readability */
+        }
+
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box; /* Include padding in width calculation */
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto; /* Maintain aspect ratio */
+            margin: 20px auto; /* Center the image */
+            display: block;
+            border-radius: 8px; /* Add rounded corners */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            text-decoration: none;
+            color: #333; /* Darker color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p><mark>Find your birthday and year:</mark></p>
+        <input type="date" onchange="age.innerText = new Date().getFullYear() - new Date(this.value).getFullYear()">
+        <p><mark>Your age is: <span id="age"></span></mark></p>
+    </div>
+    <img src="691eddbe25f6ccb4d8fe12cf2a91ee06.jpg" alt="hello">
+    <h2><em><u>THIS SYSTEM HELPS YOU DETERMINE THE AGE OF YOUR RELATIVES AND FRIENDS BY FINDING THEIR BIRTHDAYS AND BIRTH YEARS.</u></em></h2>
+    <footer>
+        <p><a href="https://www.facebook.com/share/16akcoigB6/"><em>&copy; Developer: Lorenz_cpp</em></a></p>
+    </footer>
+</body>
+</html>
+
